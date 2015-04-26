@@ -17,4 +17,5 @@ else
    chsh
 fi
 
+cd $RC_HOME
 git submodule update --init
