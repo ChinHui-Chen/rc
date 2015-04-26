@@ -100,7 +100,7 @@ alias gs='git status'
 alias gc='git commit'
 alias gco='git checkout'
 alias gcm='git commit -m'
-alias gp='git pull && push'
+alias gp='git pull && git push'
 alias gb='git branch -a'
 alias gpl='git stash && git pull && git stash pop'
 
