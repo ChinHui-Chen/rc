@@ -14,7 +14,7 @@ die() {
 
 mkdir -p ~/.ssh
 
-git clone https://github.com/JustinTW/rc.git "$RCHOME" --branch develop
+git clone https://github.com/ChinHui-Chen/rc.git "$RCHOME" --branch develop
 cd "$RCHOME"
 git submodule update --init
 
