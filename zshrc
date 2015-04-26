@@ -82,6 +82,10 @@ alias -g .....='../../../..'
 
 alias -g gbp='git-buildpackage'
 
+alias .='echo $PWD'
+
+alias rm='rm -i'
+
 ## Del
 # Delete key (see FreeBSD FAQ on keyboard and mouse)
 bindkey "\e[3~"   delete-char              # xterm
