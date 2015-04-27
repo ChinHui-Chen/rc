@@ -107,6 +107,7 @@ alias gcm='git commit -m'
 alias gp='git pull && git push'
 alias gb='git branch -a'
 alias gpl='git stash && git pull && git stash pop'
+alias gsrd='git stash && git rebase dev && git stash pop'
 
 alias gd='git diff'
 alias gdc='git diff --cached'
