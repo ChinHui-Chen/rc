@@ -176,3 +176,5 @@ vagrant destroy -f $1 && vagrant up $1 && vagrant ssh $1
 return
 }
 
+# Use boot2docker for docker in MacOS
+eval "$(boot2docker shellinit)"
