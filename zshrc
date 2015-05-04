@@ -126,6 +126,7 @@ alias rgd='rvm gemset delete'
 
 alias cw='cd ~/workspace'
 
+# vagrant
 alias vgs='vagrant ssh'
 alias vgu='vagrant up'
 #alias vgus='vagrant up $1 && vagrant ssh $1'
@@ -134,6 +135,17 @@ alias vgh='vagrant halt'
 alias vgd='vagrant destroy -f'
 #alias vgdr='vagrant destroy -f $1 && vagrant up $1'
 alias vgp='vagrant provision'
+
+# docker
+alias dr='docker run'
+alias dps='docker ps'
+alias ds='docker stop'
+alias dst='docker start'
+alias dip='boot2docker ip'
+alias dp='docker port'
+alias drm='docker rm'
+alias drti='docker run -t -i'
+alias dkr='docker'
 
 # psql
 export PSQL_EDITOR='vim +"set syntax=sql"'
