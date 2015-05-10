@@ -147,6 +147,12 @@ alias drm='docker rm'
 alias drti='docker run -t -i'
 alias dkr='docker'
 
+# django
+alias djpm='python manage.py'
+alias djpmr='python manage.py runserver'
+alias djpmm='python manage.py migrate'
+alias djpms='python manage.py shell'
+
 # ssh
 #alias sshhba='ssh hopebayadmin@$1'
 
