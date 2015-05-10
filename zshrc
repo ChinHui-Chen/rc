@@ -124,7 +124,7 @@ alias rge='rvm gemset empty'
 alias rgu='rvm gemset use'
 alias rgd='rvm gemset delete'
 
-alias cw='cd ~/workspace'
+alias cw='cd ~/Works'
 
 # vagrant
 alias vgs='vagrant ssh'
@@ -146,6 +146,13 @@ alias dp='docker port'
 alias drm='docker rm'
 alias drti='docker run -t -i'
 alias dkr='docker'
+
+# ssh
+#alias sshhba='ssh hopebayadmin@$1'
+
+function sshhba(){
+	ssh hopebayadmin@"$1"
+}
 
 # psql
 export PSQL_EDITOR='vim +"set syntax=sql"'
