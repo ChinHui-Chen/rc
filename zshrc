@@ -103,11 +103,14 @@ alias ga='git add'
 alias gs='git status'
 alias gc='git commit'
 alias gco='git checkout'
+alias gcob='git checkout -b'
 alias gcm='git commit -m'
 alias gp='git pull && git push'
 alias gb='git branch -a'
 alias gpl='git stash && git pull && git stash pop'
 alias gsrd='git stash && git rebase dev && git stash pop'
+alias gscodev='git stash && git checkout dev && git stash pop'
+#alias gsco='git stash && git checkout $1 && git stash pop'
 
 alias gd='git diff'
 alias gdc='git diff --cached'
@@ -186,6 +189,11 @@ function git_prompt_info() {
   echo "$ZSH_THEME_GIT_PROMPT_PREFIX${ref#refs/heads/}$ZSH_THEME_GIT_PROMPT_SUFFIX"
 }
 
+function gsco(){
+git stash && git checkout $1 && git stash pop
+return
+}
+
 function vgus(){
 vagrant up $1 && vagrant ssh $1
 return
@@ -203,3 +211,6 @@ return
 
 # Use boot2docker for docker in MacOS
 eval "$(boot2docker shellinit)"
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
