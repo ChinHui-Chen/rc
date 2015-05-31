@@ -105,6 +105,7 @@ alias scs='screen -S'
 # git
 alias g='git'
 alias ga='git add'
+alias gap='git add -p'
 alias gs='git status'
 alias gc='git commit'
 alias gco='git checkout'
