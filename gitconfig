@@ -2,7 +2,7 @@
 	name = JohnsonChen
 	email = johnson.chen@hopebaytech.com
 [push]
-	default = simple
+	default = current
 [branch]
 	autosetuprebase = always
 [color]
