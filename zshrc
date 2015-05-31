@@ -97,6 +97,11 @@ bindkey "\e[4~"   end-of-line              # xterm
 bindkey "^[OH" beginning-of-line           # zsh
 bindkey "^[OF" end-of-line                 # zsh
 
+# screen
+alias scls='screen -ls'
+alias scr='screen -r'
+alias scs='screen -S'
+
 # git
 alias g='git'
 alias ga='git add'
