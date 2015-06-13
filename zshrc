@@ -102,6 +102,11 @@ alias scls='screen -ls'
 alias scr='screen -r'
 alias scs='screen -S'
 
+# tmux
+alias tmls='tmux ls'
+alias tmn='tmux new -s'
+alias tma='tmux a -t'
+
 # git
 alias g='git'
 alias ga='git add'
@@ -165,6 +170,9 @@ alias djpms='python manage.py shell'
 
 # ssh
 #alias sshhba='ssh hopebayadmin@$1'
+
+# shell
+alias rezsh='source ~/.zshrc'
 
 function sshhba(){
 	ssh hopebayadmin@"$1"
