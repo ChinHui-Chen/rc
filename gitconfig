@@ -10,3 +10,5 @@
 	status = auto
 	branch = auto
 	log = auto
+[merge]
+	tool = vimdiff
