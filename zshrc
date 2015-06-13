@@ -106,6 +106,7 @@ alias scs='screen -S'
 alias tmls='tmux ls'
 alias tmn='tmux new -s'
 alias tma='tmux a -t'
+alias tmkill='tmux kill-session -t'
 
 # git
 alias g='git'
@@ -116,6 +117,7 @@ alias gc='git commit'
 alias gco='git checkout'
 alias gcob='git checkout -b'
 alias gcm='git commit -m'
+#alias gcmi='git commit -m $1 -i $2'
 alias gp='git pull && git push'
 alias gpu='git push -u'
 alias gb='git branch -a'
@@ -202,6 +204,11 @@ alias stt='subl .'
 function git_prompt_info() {
   ref=$(git symbolic-ref HEAD 2> /dev/null) || return
   echo "$ZSH_THEME_GIT_PROMPT_PREFIX${ref#refs/heads/}$ZSH_THEME_GIT_PROMPT_SUFFIX"
+}
+
+function gcmi(){
+git commit -m $1 -i $2
+return
 }
 
 function gsco(){
