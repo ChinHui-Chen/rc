@@ -236,3 +236,9 @@ eval "$(boot2docker shellinit)"
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
+
+# For Go-lang
+export GOPATH=~/Works/go
+export PATH="$PATH:/usr/local/go/bin"
+export PATH="$PATH:$GOPATH/bin"
+
