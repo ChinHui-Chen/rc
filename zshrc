@@ -172,12 +172,19 @@ alias djpms='python manage.py shell'
 
 # ssh
 #alias sshhba='ssh hopebayadmin@$1'
+#alias sshhbak='ssh-copy-id hopebayadmin@$1'
 
 # shell
 alias rezsh='source ~/.zshrc'
 
 function sshhba(){
 	ssh hopebayadmin@"$1"
+	return
+}
+
+function sshhbak(){
+	ssh-copy-id hopebayadmin@"$1"
+	return
 }
 
 # psql
