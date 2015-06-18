@@ -12,3 +12,6 @@
 	log = auto
 [merge]
 	tool = vimdiff
+[gitlab]
+	url = http://gitlab
+	token = VAqUBpTsGTVJrx5qziXw
