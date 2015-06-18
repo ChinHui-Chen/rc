@@ -171,6 +171,7 @@ alias djpmm='python manage.py migrate'
 alias djpms='python manage.py shell'
 
 # ssh
+#alias scphba='scp $1 hopebayadmin@$2:~'
 #alias sshhba='ssh hopebayadmin@$1'
 #alias sshhbak='ssh-copy-id hopebayadmin@$1'
 
@@ -184,7 +185,12 @@ function sshhba(){
 
 function sshhbak(){
 	ssh-copy-id hopebayadmin@"$1"
+	ssh hopebayadmin@"$1"
 	return
+}
+
+function scphba(){
+        scp $1 hopebayadmin@"$2":~
 }
 
 # psql
