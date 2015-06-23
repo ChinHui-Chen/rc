@@ -143,6 +143,7 @@ alias rgu='rvm gemset use'
 alias rgd='rvm gemset delete'
 
 alias cw='cd ~/Works'
+alias cwhb='cd ~/Works/HopeBay'
 
 # vagrant
 alias vgs='vagrant ssh'
