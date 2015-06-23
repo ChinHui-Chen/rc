@@ -107,6 +107,7 @@ alias tmls='tmux ls'
 alias tmn='tmux new -s'
 alias tma='tmux a -t'
 alias tmkill='tmux kill-session -t'
+alias tmndev='mux start dev'
 
 # git
 alias g='git'
