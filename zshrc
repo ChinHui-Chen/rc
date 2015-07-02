@@ -125,7 +125,11 @@ alias gb='git branch -a'
 alias gpl='git stash && git pull && git stash pop'
 alias gsrd='git stash && git rebase dev && git stash pop'
 alias gscodev='git stash && git checkout dev && git stash pop'
+alias gscodevpl='gscodev && gpl'
+alias gscodevplb='gscodevpl && gcob' 
 #alias gsco='git stash && git checkout $1 && git stash pop'
+#alias gscopl='gsco $1 && gpl'
+#alias gscoplb='gscopl $1 && gcob $2'
 
 alias gd='git diff'
 alias gdc='git diff --cached'
@@ -228,6 +232,18 @@ return
 
 function gsco(){
 git stash && git checkout $1 && git stash pop
+return
+}
+
+#alias gscopl='gsco $1 && gpl'
+function gscopl(){
+gsco $1 && gpl
+return
+}
+
+#alias gscoplb='gscopl $1 && gcob $2'
+function gscoplb(){
+gscopl $1 && gcob $2
 return
 }
 

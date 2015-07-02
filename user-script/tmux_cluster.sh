@@ -11,6 +11,7 @@ fi
 for host in $HOSTS
 do
    tmux splitw "ssh hopebayadmin@$host"
+   #tmux splitw "sshhbak $host"
    tmux select-layout tiled
 done
 tmux set-window-option synchronize-panes on
