@@ -118,6 +118,7 @@ alias gc='git commit'
 alias gco='git checkout'
 alias gcob='git checkout -b'
 alias gcm='git commit -m'
+#alias gcmp='git commit -m $1 && git push'
 #alias gcmi='git commit -m $1 -i $2'
 alias gp='git pull && git push'
 alias gpu='git push -u'
@@ -227,6 +228,11 @@ function git_prompt_info() {
 
 function gcmi(){
 git commit -m $1 -i $2
+return
+}
+
+function gcmp(){
+git commit -m $1 && git push 
 return
 }
 
