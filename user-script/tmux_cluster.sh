@@ -1,7 +1,7 @@
 #!/bin/bash
 
 if [ $1 = 'aep2.2' ]; then
-    HOSTS="10.10.0.231 10.10.0.232 10.10.0.233"
+    HOSTS="10.10.101.28 10.10.101.29 10.10.101.30"
 elif [ $1 = 'cluster2' ]; then
     HOSTS="hostA hostB hostC hostD hostE hostF"
 else
