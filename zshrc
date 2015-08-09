@@ -5,6 +5,7 @@ ZSH=$HOME/.rc/oh-my-zsh
 # time that oh-my-zsh is loaded.
 #ZSH_THEME="blinks-venv"
 ZSH_THEME="dst"
+#ZSH_THEME="seeker"
 
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
@@ -31,12 +32,12 @@ DISABLE_AUTO_UPDATE="true"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git python screen ssh-agent autojump coffee git-flow git-remote-branch tmux vagrant debian cp command-not-found last-working-dir docker)
+plugins=(git python screen ssh-agent autojump coffee git-flow git-remote-branch tmux vagrant debian cp command-not-found last-working-dir docker virtualenv virtualenvwrapper virtualenv-prompt)
 
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
-export PATH=/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:$HOME/bin:/usr/local/bin:/usr/local/sbin:$HOME/.rvm/bin
+export PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:$HOME/bin:/usr/local/sbin:$HOME/.rvm/bin
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" 
 
@@ -278,4 +279,12 @@ export PATH="/usr/local/heroku/bin:$PATH"
 export GOPATH=~/Works/go
 export PATH="$PATH:/usr/local/go/bin"
 export PATH="$PATH:$GOPATH/bin"
+
+# For Virtualenv
+export WORKON_HOME=~/.virtualenvs/
+source /usr/local/bin/virtualenvwrapper.sh
+
+# For locale
+export LANG="zh_TW.UTF-8"
+export LC_ALL="zh_TW.UTF-8"
 
