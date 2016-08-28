@@ -37,7 +37,7 @@ plugins=(git python screen ssh-agent autojump coffee git-flow git-remote-branch 
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
-export PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:$HOME/bin:/usr/local/sbin:$HOME/.rvm/bin
+export PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:$HOME/bin:/usr/local/sbin:$HOME/.rvm/bin:$HOME/Works/HopeBay/android-sdk-macosx/platform-tools:/$HOME/Works/HopeBay/android-sdk-macosx/tools:/$HOME/Works/HopeBay/android-sdk-macosx/build-tools/23.0.3/
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" 
 
@@ -150,6 +150,13 @@ alias rgd='rvm gemset delete'
 
 alias cw='cd ~/Works'
 alias cwhb='cd ~/Works/HopeBay'
+alias cwc='cd ~/Works/cloud_platform'
+#alias cwgc='ssh gcloud'
+function cwgc(){
+cd /Users/chinhui/Works/cloud_platform && ./gcloud.sh
+return
+}
+
 
 # vagrant
 alias vgs='vagrant ssh'
@@ -269,8 +276,6 @@ vagrant destroy -f $1 && vagrant up $1 && vagrant ssh $1
 return
 }
 
-# Use boot2docker for docker in MacOS
-eval "$(boot2docker shellinit)"
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
@@ -280,6 +285,11 @@ export GOPATH=~/Works/go
 export PATH="$PATH:/usr/local/go/bin"
 export PATH="$PATH:$GOPATH/bin"
 
+# For mono 
+export PATH="$PATH:/Library/Frameworks/Mono.framework/Commands"
+# For MacTex
+export PATH="$PATH:/Library/TeX/Distributions/.DefaultTeX/Contents/Programs/texbin"
+
 # For Virtualenv
 export WORKON_HOME=~/.virtualenvs/
 source /usr/local/bin/virtualenvwrapper.sh
@@ -288,3 +298,5 @@ source /usr/local/bin/virtualenvwrapper.sh
 export LANG="zh_TW.UTF-8"
 export LC_ALL="zh_TW.UTF-8"
 
+# For chinhui env
+source $HOME/.rc/zshrc_chinhui_mbp
